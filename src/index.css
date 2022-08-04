@@ -1,0 +1,98 @@
+:root {
+  /* Colors: */
+  --primary-color: #389cd6;
+  --white: #ffffff;
+  --dark-gray: #7b7070;
+  --brand-gray: #9d8e8e;
+  --light-gray: #d9d5d5;
+  --red: #ee6381;
+  --green: #309d5f;
+  --heading-text-color: #549bd1;
+  --text-color: #9d8d8d;
+
+  /* Font/text values */
+  --font-family: Trebuchet MS;
+
+  --heading-font-weight: bold;
+  --heading-line-spacing: 70px;
+
+  --main-heading-font-size: 48px;
+  --main-heading-character-spacing: 0.96px;
+
+  --secondary-heading-font-size: 39px;
+  --secondary-heading-character-spacing: 0.78px;
+  --secondary-heading-line-spacing: 50px;
+
+  --mobile-heading-font-size: 31px;
+  --mobile-heading-character-spacing: 0.62px;
+  --mobile-heading-line-spacing: 40px;
+
+  --card-heading-font-size: 25px;
+  --card-heading-character-spacing: 0.5px;
+  --card-heading-line-spacing: 36px;
+
+  --large-text-font-size: 20px;
+  --large-text-character-spacing: 0.4px;
+  --large-text-line-spacing: 28px;
+
+  --text-font-weight: normal;
+  --text-font-size: 16px;
+  --text-character-spacing: 0.32px;
+  --text-line-spacing: 22px;
+}
+
+/* Character Styles */
+.h1 {
+  font-weight: var(--heading-font-weight);
+  font-size: var(--main-heading-font-size);
+  line-height: var(--heading-line-spacing);
+  letter-spacing: var(--main-heading-character-spacing);
+  color: var(--heading-text-color);
+}
+
+.h2 {
+  font-weight: var(--heading-font-weight);
+  font-size: var(--secondary-heading-font-size);
+  line-height: var(--secondary-heading-line-spacing);
+  letter-spacing: var(--secondary-heading-character-spacing);
+  color: var(--heading-text-color);
+}
+
+.h3 {
+  font-weight: var(--heading-font-weight);
+  font-size: var(--mobile-heading-font-size);
+  line-height: var(--mobile-heading-line-spacing);
+  letter-spacing: var(--mobile-heading-character-spacing);
+  color: var(--heading-text-color);
+}
+
+.h4 {
+  font-weight: var(--heading-font-weight);
+  font-size: var(--card-heading-font-size);
+  line-height: var(--card-heading-line-spacing);
+  letter-spacing: var(--card-heading-character-spacing);
+  color: var(--heading-text-color);
+}
+
+.p-large {
+  font-weight: var(--text-font-weight);
+  font-size: var(--large-text-font-size);
+  line-height: var(--large-text-line-spacing);
+  letter-spacing: var(--large-text-character-spacing);
+  color: var(--text-color);
+}
+
+.p {
+  font-weight: var(--text-font-weight);
+  font-size: var(--text-font-size);
+  line-height: var(--text-line-spacing);
+  letter-spacing: var(--text-character-spacing);
+  color: var(--text-color);
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
