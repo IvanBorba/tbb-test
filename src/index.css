@@ -42,7 +42,7 @@
 }
 
 /* Character Styles */
-.h1 {
+h1 {
   font-weight: var(--heading-font-weight);
   font-size: var(--main-heading-font-size);
   line-height: var(--heading-line-spacing);
@@ -50,7 +50,7 @@
   color: var(--heading-text-color);
 }
 
-.h2 {
+h2 {
   font-weight: var(--heading-font-weight);
   font-size: var(--secondary-heading-font-size);
   line-height: var(--secondary-heading-line-spacing);
@@ -58,7 +58,7 @@
   color: var(--heading-text-color);
 }
 
-.h3 {
+h3 {
   font-weight: var(--heading-font-weight);
   font-size: var(--mobile-heading-font-size);
   line-height: var(--mobile-heading-line-spacing);
@@ -66,7 +66,7 @@
   color: var(--heading-text-color);
 }
 
-.h4 {
+h4 {
   font-weight: var(--heading-font-weight);
   font-size: var(--card-heading-font-size);
   line-height: var(--card-heading-line-spacing);
@@ -74,15 +74,7 @@
   color: var(--heading-text-color);
 }
 
-.p-large {
-  font-weight: var(--text-font-weight);
-  font-size: var(--large-text-font-size);
-  line-height: var(--large-text-line-spacing);
-  letter-spacing: var(--large-text-character-spacing);
-  color: var(--text-color);
-}
-
-.p {
+p {
   font-weight: var(--text-font-weight);
   font-size: var(--text-font-size);
   line-height: var(--text-line-spacing);
