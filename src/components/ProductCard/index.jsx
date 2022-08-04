@@ -8,7 +8,7 @@ const ProductCard = ({ product }) => {
         src={product.image}
         className="card-image"
       />
-      <p>{product.description}</p>
+      <p className="card-description">{product.description}</p>
       <button className={`card-button ${"card-button-" + product.type}`}>
         {product.type}
       </button>

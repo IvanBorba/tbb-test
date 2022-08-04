@@ -12,11 +12,17 @@
   justify-content: space-between;
 }
 
-.icons-container > img {
+.logo {
   height: 5rem;
 }
 
 .icons-container > span {
+  cursor: pointer;
+  width: 1rem;
+  text-align: center;
+}
+
+.close-mobile-navigation-icon {
   cursor: pointer;
   width: 1rem;
   text-align: center;

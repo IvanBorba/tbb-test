@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 import intibiomeLogo from "../../assets/images/logo-intibiome.png";
+import closeIcon from "../../assets/icons/close.png";
 import { MenuIcon, SearchIcon } from "../../assets/icons";
 import "./style.css";
 
@@ -17,12 +18,11 @@ const Header = ({ isMobile }) => {
       <div className="icons-container">
         {isMobile ? (
           openMobileNavigation ? (
-            <span
+            <img
+              src={closeIcon}
               className="close-mobile-navigation-icon"
               onClick={handleMobileNavigation}
-            >
-              X
-            </span>
+            />
           ) : (
             <span onClick={handleMobileNavigation}>
               <MenuIcon />
@@ -31,7 +31,7 @@ const Header = ({ isMobile }) => {
         ) : (
           <span />
         )}
-        <img alt="Main Logo" src={intibiomeLogo} />
+        <img className="logo" alt="Main Logo" src={intibiomeLogo} />
         <SearchIcon />
       </div>
       {isMobile && openMobileNavigation && (

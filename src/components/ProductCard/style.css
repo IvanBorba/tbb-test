@@ -1,7 +1,8 @@
 .product-card-container {
-  width: 22.25rem;
-  height: 33.125em;
-  margin-top: 2.5rem;
+  min-width: 19rem;
+  height: 25em;
+  margin: 1.5rem;
+  margin-top: 0;
   border-radius: 16px;
   box-shadow: 0px 3px 16px #00000014;
   display: flex;
@@ -13,8 +14,15 @@
 }
 
 .card-image {
-  width: 11rem;
-  height: 21.875rem;
+  width: 9rem;
+  height: 16rem;
+}
+
+.card-description {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  white-space: initial;
 }
 
 .card-button {
@@ -22,6 +30,7 @@
   height: 4.5rem;
   color: var(--white);
   font-size: var(--card-heading-font-size);
+  cursor: pointer;
 }
 
 .card-button-wellness {
@@ -29,9 +38,21 @@
 }
 
 .card-button-active {
-  background-color: var(--red);
+  background-color: var(--green);
 }
 
 .card-button-agecare {
-  background-color: var(--green);
+  background-color: var(--red);
+}
+
+@media (min-width: 769px) {
+  .product-card-container {
+    width: 22.25rem;
+    height: 33.125em;
+  }
+
+  .card-image {
+    width: 11rem;
+    height: 21.875rem;
+  }
 }
