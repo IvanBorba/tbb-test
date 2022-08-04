@@ -10,16 +10,30 @@ import Header from "../../components/Header";
 
 import { mockedArticles, mockedProducts } from "../../mocks";
 
-import "./style.css";
 import Footer from "../../components/Footer";
 
+import { useState } from "react";
+
+import "./style.css";
+
 const LandingPage = () => {
+  const [openMobileNavigation, setOpenMobileNavigation] = useState(false);
+
+  const handleMobileNavigation = () => {
+    setOpenMobileNavigation(!openMobileNavigation);
+    console.log(openMobileNavigation);
+  };
+
   const actualWidth = window.innerWidth;
   const isMobile = actualWidth < 769;
 
   return (
-    <>
-      <Header isMobile={isMobile} />
+    <div className={openMobileNavigation && "fixed"}>
+      <Header
+        isMobile={isMobile}
+        handleMobileNavigation={handleMobileNavigation}
+        openMobileNavigation={openMobileNavigation}
+      />
       <main className="main-container">
         <img
           className="banner"
@@ -77,7 +91,7 @@ const LandingPage = () => {
         <button className="articles-cta-button">see more</button>
       </section>
       <Footer />
-    </>
+    </div>
   );
 };
 

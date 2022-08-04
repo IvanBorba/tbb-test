@@ -5,6 +5,11 @@
   align-items: center;
 }
 
+.fixed {
+  max-height: 25vh;
+  overflow: hidden;
+}
+
 .banner {
   width: 100%;
 }

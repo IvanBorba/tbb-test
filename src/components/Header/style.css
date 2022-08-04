@@ -1,11 +1,12 @@
 .header {
+  height: 5rem;
   width: 100%;
 }
 
 .icons-container {
   width: 100%;
   height: 5rem;
-  padding: 0 4%;
+  padding: 0 6%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
@@ -24,7 +25,8 @@
 
 .close-mobile-navigation-icon {
   cursor: pointer;
-  width: 1rem;
+  width: 0.8rem;
+  padding: 0.1rem;
   text-align: center;
 }
 

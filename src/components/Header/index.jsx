@@ -1,18 +1,9 @@
-import { useState } from "react";
-
 import intibiomeLogo from "../../assets/images/logo-intibiome.png";
 import closeIcon from "../../assets/icons/close.png";
 import { MenuIcon, SearchIcon } from "../../assets/icons";
 import "./style.css";
 
-const Header = ({ isMobile }) => {
-  const [openMobileNavigation, setOpenMobileNavigation] = useState(false);
-
-  const handleMobileNavigation = () => {
-    setOpenMobileNavigation(!openMobileNavigation);
-    console.log(openMobileNavigation);
-  };
-
+const Header = ({ isMobile, openMobileNavigation, handleMobileNavigation }) => {
   return (
     <header className="header">
       <div className="icons-container">
