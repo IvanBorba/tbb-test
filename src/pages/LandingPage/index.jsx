@@ -71,7 +71,7 @@ const LandingPage = () => {
             <ArticleCard article={element} key={index} />
           ))}
         </div>
-        <button className="articles-cta-button"></button>
+        <button className="articles-cta-button">see more</button>
       </section>
       <footer></footer>
     </>
