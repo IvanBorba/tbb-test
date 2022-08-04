@@ -1,0 +1,28 @@
+.article-card-container {
+  min-width: 19rem;
+  height: 19.3rem;
+  box-shadow: 0px 3px 16px #00000014;
+  border-radius: 16px;
+  cursor: pointer;
+  margin: 0 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.article-card-image {
+  width: 100%;
+  height: 12.4rem;
+}
+
+.article-card-title {
+  width: 100%;
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
+  white-space: initial;
+}
+
+@media (min-width: 769px) {
+  .article-card-container {
+    width: 22.125rem;
+    height: 22.375rem;
+  }
+}

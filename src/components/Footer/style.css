@@ -1,0 +1,74 @@
+.footer-container {
+  width: 100%;
+  height: 47.875rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  box-sizing: border-box;
+  padding-top: 2rem;
+}
+
+.footer-navigation-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-navigation-button {
+  width: 8rem;
+  height: 3rem;
+  background-color: var(--primary-color);
+  color: var(--white);
+  cursor: pointer;
+  font-size: var(--text-font-size);
+}
+
+.button-division-line {
+  width: 1.5rem;
+  border: 1px solid var(--white);
+  margin: 1rem 0;
+}
+
+.footer-icons-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 2.625rem 0;
+  gap: 6.75rem;
+}
+
+.footer-icons-container > svg {
+  cursor: pointer;
+}
+
+.u-labs-logo {
+  width: 7.25rem;
+  height: 1.8rem;
+  cursor: pointer;
+}
+
+@media (min-width: 769px) {
+  .footer-container {
+    padding: 0 20%;
+    padding-top: 2.5rem;
+    height: 15.125rem;
+  }
+
+  .footer-navigation-container {
+    flex-direction: row;
+    margin-bottom: 3.75rem;
+  }
+
+  .button-division-line {
+    width: 0;
+    height: 1.5rem;
+    border: 1px solid var(--white);
+  }
+
+  .footer-icons-container {
+    padding: 0;
+    flex-direction: row;
+  }
+}
