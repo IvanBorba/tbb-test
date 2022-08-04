@@ -1,12 +1,20 @@
-import Header from "../../components/Header";
 import bannerHeroMobile from "../../assets/images/banner-hero-mobile.png";
 import bannerHeroDesktop from "../../assets/images/banner-hero.png";
+import bannerMidMobile from "../../assets/images/banner-mid-mobile.png";
+import bannerMidDesktop from "../../assets/images/banner-mid.png";
 import infoIcons from "../../assets/images/info-icons.png";
 import packBlue from "../../assets/images/pack-blue.png";
 import packGreen from "../../assets/images/pack-green.png";
 import packPink from "../../assets/images/pack-pink.png";
-import "./style.css";
+import article1Image from "../../assets/images/article1-image.png";
+import article2Image from "../../assets/images/article2-image.png";
+import article3Image from "../../assets/images/article3-image.png";
+
 import ProductCard from "../../components/ProductCard";
+import Header from "../../components/Header";
+
+import "./style.css";
+import ArticleCard from "../../components/ArticleCard";
 
 const mockedProducts = [
   {
@@ -26,6 +34,21 @@ const mockedProducts = [
   },
 ];
 
+const mockedArticles = [
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: article1Image,
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: article2Image,
+  },
+  {
+    title: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    image: article3Image,
+  },
+];
+
 const LandingPage = () => {
   const actualWidth = window.innerWidth;
   const isMobile = actualWidth < 769;
@@ -35,9 +58,9 @@ const LandingPage = () => {
       <Header isMobile={isMobile} />
       <main className="main-container">
         <img
-          className="banner-hero"
-          alt="Banner Hero, shows the logo, the product packs images, also some all-ages women with the following text: Cares for intimate microbiome to help strengthen natural intimate defence"
+          className="banner"
           src={isMobile ? bannerHeroMobile : bannerHeroDesktop}
+          alt="Banner Hero, shows the logo, the product packs images, also some all-ages women with the following text: Cares for intimate microbiome to help strengthen natural intimate defence"
         />
         <section className="info-section-container">
           <h2>we're here to help</h2>
@@ -73,8 +96,20 @@ const LandingPage = () => {
           </div>
         </section>
       </main>
-      <img></img>
-      <section></section>
+      <img
+        className="banner"
+        src={isMobile ? bannerMidMobile : bannerMidDesktop}
+        alt="Mid page banner, shows the logo, the product packs images, and the following text: Cares for intimate microbiome to help strengthen natural intimate defence"
+      ></img>
+      <section className="articles-section-container">
+        <h2 className="large-heading">keep up to date with our discoveries</h2>
+        <div className="articles-cards-list-container">
+          {mockedArticles.map((element, index) => (
+            <ArticleCard article={element} key={index} />
+          ))}
+        </div>
+        <button className="articles-cta-button"></button>
+      </section>
       <footer></footer>
     </>
   );
