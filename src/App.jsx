@@ -1,11 +1,8 @@
 import "./App.css";
+import LandingPage from "./pages/LandingPage";
 
-function App() {
-  return (
-    <div>
-      <h1>intibiome</h1>
-    </div>
-  );
-}
+const App = () => {
+  return <LandingPage />;
+};
 
 export default App;

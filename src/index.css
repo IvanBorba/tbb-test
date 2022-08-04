@@ -88,3 +88,9 @@ p {
   padding: 0;
   border: 0;
 }
+
+html,
+body {
+  width: 100%;
+  min-height: 100vh;
+}
