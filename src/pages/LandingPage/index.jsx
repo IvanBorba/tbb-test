@@ -11,6 +11,7 @@ import Header from "../../components/Header";
 import { mockedArticles, mockedProducts } from "../../mocks";
 
 import "./style.css";
+import Footer from "../../components/Footer";
 
 const LandingPage = () => {
   const actualWidth = window.innerWidth;
@@ -73,7 +74,7 @@ const LandingPage = () => {
         </div>
         <button className="articles-cta-button">see more</button>
       </section>
-      <footer></footer>
+      <Footer />
     </>
   );
 };
