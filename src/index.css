@@ -76,9 +76,9 @@ h4 {
 
 p {
   font-weight: var(--text-font-weight);
-  font-size: var(--text-font-size);
-  line-height: var(--text-line-spacing);
-  letter-spacing: var(--text-character-spacing);
+  font-size: var(--large-text-font-size);
+  line-height: var(--large-text-line-spacing);
+  letter-spacing: var(--large-text-character-spacing);
   color: var(--text-color);
 }
 

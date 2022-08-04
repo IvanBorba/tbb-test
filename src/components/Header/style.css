@@ -4,11 +4,16 @@
 
 .icons-container {
   width: 100%;
+  height: 5rem;
   padding: 0 4%;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.icons-container > img {
+  height: 5rem;
 }
 
 .icons-container > span {
