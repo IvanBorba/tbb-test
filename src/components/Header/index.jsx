@@ -1,9 +1,12 @@
 import intibiomeLogo from "../../assets/images/logo-intibiome.png";
 import closeIcon from "../../assets/icons/close.png";
+import downIcon from "../../assets/icons/down-arrow.png";
 import { MenuIcon, SearchIcon } from "../../assets/icons";
 import "./style.css";
 
 const Header = ({ isMobile, openMobileNavigation, handleMobileNavigation }) => {
+  console.log(openMobileNavigation);
+  console.log(isMobile);
   return (
     <header className="header">
       <div className="icons-container">
@@ -48,10 +51,16 @@ const Header = ({ isMobile, openMobileNavigation, handleMobileNavigation }) => {
       )}
       {!isMobile && (
         <nav className="navigation-desktop-container">
-          <button className="navigation-desktop-button">about us</button>
-          <button className="navigation-desktop-button">our products</button>
-          <button className="navigation-desktop-button">intimate health</button>
-          <button className="navigation-desktop-button">contact us</button>
+          <div className="navigation-desktop-button">
+            about us <img className="down-icon" src={downIcon} />
+          </div>
+          <div className="navigation-desktop-button">
+            our products <img className="down-icon" src={downIcon} />
+          </div>
+          <div className="navigation-desktop-button">
+            intimate health <img className="down-icon" src={downIcon} />
+          </div>
+          <div className="navigation-desktop-button">contact us</div>
         </nav>
       )}
     </header>

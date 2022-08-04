@@ -21,18 +21,17 @@ const LandingPage = () => {
 
   const handleMobileNavigation = () => {
     setOpenMobileNavigation(!openMobileNavigation);
-    console.log(openMobileNavigation);
   };
 
   const actualWidth = window.innerWidth;
   const isMobile = actualWidth < 769;
 
   return (
-    <div className={openMobileNavigation && "fixed"}>
+    <div className={openMobileNavigation ? "fixed" : ""}>
       <Header
         isMobile={isMobile}
-        handleMobileNavigation={handleMobileNavigation}
         openMobileNavigation={openMobileNavigation}
+        handleMobileNavigation={handleMobileNavigation}
       />
       <main className="main-container">
         <img
