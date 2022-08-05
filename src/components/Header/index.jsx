@@ -5,8 +5,6 @@ import { MenuIcon, SearchIcon } from "../../assets/icons";
 import "./style.css";
 
 const Header = ({ isMobile, openMobileNavigation, handleMobileNavigation }) => {
-  console.log(openMobileNavigation);
-  console.log(isMobile);
   return (
     <header className="header">
       <div className="icons-container">

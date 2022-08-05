@@ -83,7 +83,7 @@
 
 @media (min-width: 769px) {
   .header {
-    width: 8rem;
+    height: 8rem;
   }
   .icons-container {
     padding: 0 20%;
