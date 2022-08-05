@@ -19,14 +19,14 @@ Para rodar este projeto é necessário ter as seguintes tecnologias instaladas:
 $ git clone git@github.com:IvanBorba/tbb-test.git
 ```
 
-- Acesse a pasta do projeto seu terminal:
+- Acesse a pasta do projeto em seu terminal:
 
 ```bash
 #!/bin/bash
 $ cd tbb-test
 ```
 
-- Já na pasta da aplicação digite o seguinte comando para instalar as dependências:
+- Já na pasta da aplicação, digite o seguinte comando para instalar as dependências:
 
 ```bash
 #!/bin/bash
