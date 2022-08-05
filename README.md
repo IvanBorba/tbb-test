@@ -58,4 +58,4 @@ Link do deploy: <https://tbb-test.vercel.app/>
 
 ## Agradecimentos
 
-Agradeço a The Brooklyn Brother e sua equipe pela oportunidade de estar participando de seu processo seletivo, espero que gostem do código :wink:
+Agradeço a The Brooklyn Brothers e sua equipe pela oportunidade de estar participando de seu processo seletivo, espero que gostem do código :wink:
